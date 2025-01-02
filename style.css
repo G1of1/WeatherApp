@@ -1,0 +1,108 @@
+form,
+.container
+{
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #021d42, rgb(255, 119, 0));
+    color:white;
+    border-radius: 15px;
+    padding: 50px;
+    box-shadow: 2px 2px 5px black;
+    min-width: 300px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+.container
+{
+    animation-name: rotate;
+    animation-duration: 1s;
+}
+h1
+{
+    font-size: 3.5rem;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+p
+{
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+.city-display, .temp-display
+{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color:rgba(255, 255, 255, 0.783);
+    margin-bottom: 25px;
+}
+.humidity-display
+{
+    font-weight: bold;
+    margin-bottom: 25px;
+
+}
+.desc-display
+{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.emoji
+{
+    margin:0;
+    font-size: 7.5rem;
+}
+.error-display
+{
+    animation-name: rotate;
+    animation-duration: 0.65s;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:#021d4290
+}
+@keyframes rotate
+{
+    100%{transform: rotateZ(360deg)};
+}
+body
+{
+    background-color:rgb(221, 155, 11);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.weatherform
+{
+    padding: 20px;
+    
+
+}
+.weatherform input
+{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 10px;
+    margin: 10px;
+    width: 300px;
+}
+button[type="submit"]
+{
+    padding: 10px 20px;
+    font-weight:bold;
+    font-size:2rem;
+    background-color:#1e68cf;
+    border-radius: 10px;
+    border: none;
+    color:white;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover
+{
+    background-color:#4789e6;
+}
